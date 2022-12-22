@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ControllingHtml5 Video & caption with js</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>HTML Video Element</h1>
+    </header>
+    <main>    
+        <video controls id="video" poster="Thank.jpg">
+            <source src="./video/lion-sample.mp4" type="video/mp4"/>
+            <source src="./video/lion-sample.webm" type="video/webm"/>
+            <source src="./video/lion-sample.ogv" type="video/ogv"/>
+            <source src="./video/lion-sample.3gp" type="video/3gp"/>
+
+            <!-- Adding caption -->
+            
+            <track default 
+                    src="video/lion.vtt" 
+                    kind="captions" 
+                    srclang="en"
+                    label="English Captions"/>
+            
+            <p><a href="#" download>Download the Video</a></p>
+        </video><br/>
+        <button id="btnPlay" class="control">Play</button><br/>
+        <button id="btnPaws" class="control">Pause</button><br/>
+        <button id="btnStop" class="control">Stop</button><br/>
+        <button id="btnRew" class="control">Rewind</button><br/>
+        <button id="btnFF" class="control">Fast-forward</button><br/>
+    </main>
+    <!-- js -->
+    <script src="main.js"></script>
+</body>
+</html>
